@@ -79,10 +79,10 @@ em{font-style:normal}
 .telas{display:flex;gap:5px;margin-top:4px}
 .telas i{width:13px;height:13px;border:1.5px solid var(--tinta);background:transparent;transition:background .3s,transform .3s}
 .telas i.on{transform:scale(1.12)}
-.hero .ent{opacity:0;transform:translateY(14px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.hero .ent{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .hero.pronto .ent{opacity:1;transform:none}
-.hero.pronto .hero-base{transition-delay:.25s}
-.grande{clip-path:inset(0 100% 0 0);transition:clip-path 1.3s var(--ease) .1s}
+.hero.pronto .hero-base{transition-delay:.15s}
+.grande{clip-path:inset(0 100% 0 0);transition:clip-path .85s var(--ease) .05s}
 .hero.pronto .grande{clip-path:inset(0 0 0 0)}
 .hero.pronto .grande.fim{clip-path:none;transition:none}
 

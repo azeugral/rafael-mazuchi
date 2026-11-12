@@ -9,7 +9,7 @@
     { n: 'morango', c: [[220, 193, 168], [245, 74, 12], [15, 175, 160]] },
     { n: 'cinco', c: [[192, 123, 105], [117, 147, 158], [84, 76, 70]] }
   ];
-  var CICLO = 7.6, INI = .35, PASSO = 1.12, DUR = .9;
+  var CICLO = 5.2, INI = .12, PASSO = .4, DUR = .52;
 
   var VS = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
   var FS = [

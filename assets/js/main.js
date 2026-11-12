@@ -63,7 +63,7 @@
     /* celular: vídeo do mesmo shader; se o modo economia recusar o play, volta pro WebGL */
     cv.hidden = true; vid.hidden = false;
     vid.poster = 'assets/img/hero-poster.webp';
-    vid.src = 'assets/video/hero.mp4?v=1';
+    vid.src = 'assets/video/hero.mp4?v=2';
     vid.addEventListener('timeupdate', function () {
       var t = vid.currentTime, i = Math.floor(t / HeroSeri.ciclo) % HeroSeri.n;
       rotulo(i, t - Math.floor(t / HeroSeri.ciclo) * HeroSeri.ciclo);
@@ -76,9 +76,9 @@
 
   /* entrada */
   d.querySelectorAll('.hero-base,.pre,.peca').forEach(function (el) { el.classList.add('ent'); });
-  requestAnimationFrame(function () { setTimeout(function () { hero.classList.add('pronto'); }, 80); });
+  requestAnimationFrame(function () { setTimeout(function () { hero.classList.add('pronto'); }, 30); });
   /* sem clip-path depois da entrada: senão o nome vira camada própria e o multiply da arte não o enxerga */
-  setTimeout(function () { grande.classList.add('fim'); }, 1700);
+  setTimeout(function () { grande.classList.add('fim'); }, 1000);
 
   /* ---------- topo e gaveta ---------- */
   var topo = d.getElementById('topo'), gav = d.getElementById('gaveta'), burger = d.getElementById('burger');

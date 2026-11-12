@@ -12,7 +12,7 @@ async def main():
         b = await p.chromium.launch(args=['--use-gl=angle', '--enable-webgl', '--ignore-gpu-blocklist'])
         pg = await b.new_page(viewport={'width': 1440, 'height': 900})
         await pg.goto(URL + '?render&w=800'); await pg.wait_for_function('window.__pronto')
-        for t in (1.0, 2.0, 4.8, 7.3, 12.4, 20.0, 27.5):
+        for t in (0.3, 0.7, 1.1, 1.6, 2.2, 4.6):
             await pg.evaluate(f'__q({t})')
             await pg.locator('#arteCv').screenshot(path=f'{OUT}/hero-{t}.png')
         for w, h, nome in ((1440, 900, 'pc'), (1366, 768, 'note'), (1920, 1080, 'fhd'), (390, 844, 'cel'), (320, 640, 'cel320'), (844, 390, 'deitado'), (768, 1024, 'tablet')):

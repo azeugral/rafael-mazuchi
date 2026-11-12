@@ -2,7 +2,7 @@
 uso: python tools/gerar_video.py  (servidor local em :8951)"""
 import asyncio, subprocess, os
 from playwright.async_api import async_playwright
-W, H, FPS, TOTAL = 1080, 1080, 30, 4 * 7.6
+W, H, FPS, TOTAL = 1080, 1080, 30, 4 * 5.2
 OUT = os.path.join(os.path.dirname(__file__), '..', 'assets', 'video', 'hero.mp4')
 async def main():
     ff = subprocess.Popen(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', str(FPS), '-i', '-',
@@ -13,7 +13,7 @@ async def main():
         pg = await b.new_page(viewport={'width': W, 'height': H + 400})
         await pg.goto(f'http://localhost:8951/?render&w={W}'); await pg.wait_for_function('window.__pronto')
         await pg.add_style_tag(content=f'#arteCv{{position:fixed!important;left:0;top:0;width:{W}px!important;height:{H}px!important;z-index:999;mix-blend-mode:normal!important}}body,.hero{{background:#fff!important}}.topo{{display:none}}')
-        await pg.evaluate('__q(5.5)')
+        await pg.evaluate('__q(3)')
         await pg.screenshot(path=os.path.join(os.path.dirname(OUT), '..', 'img', 'hero-poster.png'), clip={'x': 0, 'y': 0, 'width': W, 'height': H})
         n = int(round(TOTAL * FPS))
         for i in range(n):
