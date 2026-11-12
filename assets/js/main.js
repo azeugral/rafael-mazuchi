@@ -110,6 +110,9 @@
 
   /* ---------- trilho de flash: arrastar com o mouse ---------- */
   var tr = d.getElementById('trilho'), ax = null, sx = 0;
+  /* trilho começa centralizado: folhas cortadas por igual nas duas bordas */
+  function centrar() { tr.style.scrollSnapType = 'none'; tr.scrollLeft = (tr.scrollWidth - tr.clientWidth) / 2; requestAnimationFrame(function () { tr.style.scrollSnapType = ''; }); }
+  addEventListener('load', centrar);
   tr.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') return; ax = e.clientX; sx = tr.scrollLeft; tr.style.scrollSnapType = 'none'; });
   addEventListener('pointermove', function (e) { if (ax !== null) tr.scrollLeft = sx - (e.clientX - ax); });
   addEventListener('pointerup', function () { if (ax !== null) { ax = null; tr.style.scrollSnapType = ''; } });
