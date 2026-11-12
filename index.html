@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafael Mazuchi · Tatuagem tradicional em São Caetano do Sul</title>
+<meta name="description" content="Tatuagens clássicas e customizadas, flash disponível e projetos autorais em São Caetano do Sul. Ilustração, serigrafia, costura e cerâmica feitas à mão por Rafael Mazuchi.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ece3cf">
+<meta property="og:title" content="Rafael Mazuchi · Tatuagem">
+<meta property="og:description" content="Desenho, tela e pele. Tatuagem tradicional em São Caetano do Sul.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preload" href="assets/fonts/shrikhand.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css?v=1">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <nav class="nav nav-e" aria-label="Seções">
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#flash">Flash</a>
+    <a href="#feito-a-mao">Feito à mão</a>
+  </nav>
+  <a class="marca" href="#" aria-label="Rafael Mazuchi, início"><span class="logo" aria-hidden="true"></span></a>
+  <nav class="nav nav-d" aria-label="Contato">
+    <a href="#processo">Processo</a>
+    <a href="#estudio">Estúdio</a>
+    <a class="nav-cta" href="#agendar">Agendar</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="gaveta"><span></span><span></span></button>
+</header>
+<div class="gaveta" id="gaveta" hidden>
+  <a href="#trabalhos">Trabalhos</a><a href="#flash">Flash disponível</a><a href="#feito-a-mao">Feito à mão</a><a href="#processo">Processo</a><a href="#estudio">Estúdio</a><a class="g-cta" href="#agendar">Agendar tatuagem</a>
+</div>
+
+<main id="conteudo">
+<section class="hero" aria-label="Rafael Mazuchi, tatuador">
+  <div class="palco" id="palco">
+    <div class="nome" aria-hidden="true">
+      <span class="bloco"><span class="pre">Rafael</span><span class="grande" id="grande">Mazuchi</span></span>
+    </div>
+    <div class="arte">
+      <canvas id="arteCv" hidden></canvas>
+      <video id="arteVid" muted playsinline loop preload="none" hidden></video>
+      <img id="arteImg" src="assets/img/hero-poster.webp" alt="Flash do Rafael Mazuchi impresso em serigrafia" hidden>
+      <i class="reg r1"></i><i class="reg r2"></i><i class="reg r3"></i><i class="reg r4"></i>
+    </div>
+  </div>
+  <h1 class="sr">Rafael Mazuchi, tatuagem tradicional em São Caetano do Sul</h1>
+  <div class="hero-base">
+    <p class="frase">Desenho, tela <em>e pele.</em></p>
+    <p class="sub">Tatuagens clássicas e customizadas em São Caetano do Sul. Ilustração, serigrafia, costura e cerâmica, tudo feito à mão.</p>
+    <div class="acoes">
+      <a class="btn btn-tinta" href="#agendar">Agendar tatuagem</a>
+      <a class="btn btn-linha" href="#flash">Ver flash disponível</a>
+    </div>
+  </div>
+  <div class="peca" id="peca" aria-live="off">
+    <span class="p-n">Nº 1</span><span class="p-t">Mão de dominó</span>
+    <span class="telas" id="telas"><i></i><i></i><i></i><i></i></span>
+  </div>
+</section>
+
+<div class="fita" aria-hidden="true"><div class="fita-in">
+  <span>Agenda sempre aberta</span><b>✌</b><span>Sua ideia ou a minha</span><b>✌</b><span>Flash no precinho</span><b>✌</b><span>Colorida ou preto e cinza</span><b>✌</b><span>Feito à mão em São Caetano</span><b>✌</b>
+  <span>Agenda sempre aberta</span><b>✌</b><span>Sua ideia ou a minha</span><b>✌</b><span>Flash no precinho</span><b>✌</b><span>Colorida ou preto e cinza</span><b>✌</b><span>Feito à mão em São Caetano</span><b>✌</b>
+</div></div>
+
+<section class="sec pele" id="pele">
+  <div class="wrap pele-grid">
+    <div class="pele-txt rev">
+      <p class="eti">Desenho × pele</p>
+      <h2>A tela é orgânica <em>e viva.</em></h2>
+      <p>Todo desenho nasce no papel e termina num corpo. Alguns ficam idênticos ao flash, outros mudam um pouco no caminho, porque pele não é papel. Arraste e compare o palhaço do papel com o que foi pro braço.</p>
+      <p class="assina">Rafael Mazuchi</p>
+    </div>
+    <div class="comp rev" id="comp" style="--x:50%">
+      <img src="assets/img/f/comp-pele.webp" alt="Palhaço tatuado no antebraço" width="800" height="1000" loading="lazy">
+      <div class="comp-a"><img src="assets/img/f/comp-desenho.webp" alt="Desenho original do palhaço" width="800" height="1000" loading="lazy"></div>
+      <span class="comp-l l-a">Desenho</span><span class="comp-l l-b">Pele</span>
+      <i class="comp-bar" aria-hidden="true"></i>
+      <input type="range" id="cRange" min="0" max="100" value="50" aria-label="Comparar desenho e tatuagem">
+    </div>
+  </div>
+</section>
+
+<section class="sec escuro" id="trabalhos">
+  <div class="wrap">
+    <div class="cab rev">
+      <p class="eti">Trabalhos</p>
+      <h2>Tradicional, <em>do jeito clássico.</em></h2>
+      <p class="lead">Traço firme, cor chapada e preto que segura. Damas, panteras, palhaços, adagas e o que mais couber na sua história.</p>
+    </div>
+    <div class="filtros" role="group" aria-label="Filtrar trabalhos">
+      <button class="on" data-f="todos">Todos</button><button data-f="cor">Coloridas</button><button data-f="preto">Preto e cinza</button>
+    </div>
+    <div class="grade" id="grade"></div>
+    <div class="mais-w"><button class="btn btn-claro" id="mais">Ver mais trabalhos</button></div>
+  </div>
+</section>
+
+<section class="sec azul" id="flash">
+  <div class="wrap">
+    <div class="flash-cab rev">
+      <div>
+        <p class="eti">Flash disponível</p>
+        <h2>No <em>precinho.</em></h2>
+      </div>
+      <div class="flash-reg">
+        <p>Desenhos prontos para tatuar, de <strong>R$ 300 a R$ 500</strong>, de 9 a 18 cm. Escolheu dois? <strong>O segundo, de mesmo valor, sai pela metade.</strong></p>
+        <p class="nota">Gostou do desenho mas não das cores? A gente faz o mesmo flash em preto e cinza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="trilho" id="trilho" tabindex="0" aria-label="Folhas de flash disponível, role para o lado">
+    <figure class="folha"><img src="assets/img/f/flash0.webp" alt="Folha de flash disponível 1" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash1.webp" alt="Folha de flash disponível 2" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash2.webp" alt="Folha de flash disponível 3" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash3.webp" alt="Folha de flash disponível 4" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash4.webp" alt="Folha de flash disponível 5" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash5.webp" alt="Folha de flash disponível 6" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash6.webp" alt="Folha de flash disponível 7" width="600" height="900" loading="lazy"></figure>
+    <figure class="folha"><img src="assets/img/f/flash7.webp" alt="Folha de flash disponível 8" width="600" height="900" loading="lazy"></figure>
+  </div>
+  <div class="wrap flash-pe">
+    <a class="btn btn-papel" href="#agendar" data-tipo="Flash disponível">Reservar um flash</a>
+    <span class="dica">Arraste para o lado ⟶</span>
+  </div>
+</section>
+
+<section class="sec papel" id="feito-a-mao">
+  <div class="wrap">
+    <div class="cab rev">
+      <p class="eti">Feito à mão</p>
+      <h2>Do desenho <em>à costura.</em></h2>
+      <p class="lead">Serigrafia há mais de três anos, costura e modelagem há poucos meses. Bolsas, camisetas, bandeiras e cerâmica, do projeto da ilustração até a embalagem. Também por encomenda.</p>
+    </div>
+    <div class="mao">
+      <figure class="m m1 rev"><img src="assets/img/f/m-tela.webp" alt="Tela de serigrafia com tinta azul" width="700" height="900" loading="lazy"><figcaption><b>01</b> Puxada na tela</figcaption></figure>
+      <figure class="m m2 rev"><img src="assets/img/f/m-camiseta.webp" alt="Camiseta com estampa em serigrafia" width="900" height="900" loading="lazy"><figcaption><b>02</b> Camiseta serigrafada</figcaption></figure>
+      <figure class="m m3 rev"><img src="assets/img/f/m-costura.webp" alt="Costura de bolsa na máquina" width="700" height="900" loading="lazy"><figcaption><b>03</b> Molde, corte e costura</figcaption></figure>
+      <figure class="m m4 rev"><img src="assets/img/f/m-tote.webp" alt="Bolsa tote em algodão cru estampada" width="700" height="900" loading="lazy"><figcaption><b>04</b> Tote em algodão cru</figcaption></figure>
+      <figure class="m m5 rev"><img src="assets/img/f/m-flamula.webp" alt="Flâmula estampada em serigrafia" width="900" height="900" loading="lazy"><figcaption><b>05</b> Flâmula com haste de bambu</figcaption></figure>
+      <figure class="m m6 rev"><img src="assets/img/f/m-ceramica.webp" alt="Bandeja de azulejo pintada à mão" width="700" height="900" loading="lazy"><figcaption><b>06</b> Cerâmica</figcaption></figure>
+    </div>
+    <div class="mao-pe rev">
+      <p>As peças saem pela <a href="https://www.instagram.com/estampariacucarachas/" target="_blank" rel="noopener">@estampariacucarachas</a>. Quer uma bolsa, bandeira ou camiseta com sua arte? Dá pra desenrolar o projeto inteiro.</p>
+      <a class="btn btn-linha" href="#agendar" data-tipo="Encomenda feita à mão">Encomendar uma peça</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec papel2" id="processo">
+  <div class="wrap">
+    <div class="cab rev">
+      <p class="eti">Processo</p>
+      <h2>Como nasce uma tattoo <em>personalizada.</em></h2>
+      <p class="lead">Tudo começa com a sua ideia e uma referência. Cada etapa existe para fazer o desenho funcionar na pele e no corpo de quem vai carregar.</p>
+    </div>
+    <ol class="passos">
+      <li class="passo rev"><figure><img src="assets/img/f/proc1.webp" alt="Foto do antebraço do cliente" width="540" height="1000" loading="lazy"></figure><span class="pn">01</span><h3>Entendendo a região</h3><p>Você manda uma foto de onde quer tatuar. Ali eu penso no encaixe, na anatomia e no espaço disponível.</p></li>
+      <li class="passo rev"><figure><img src="assets/img/f/proc2.webp" alt="Esboço em azul sobre a foto do braço" width="540" height="1000" loading="lazy"></figure><span class="pn">02</span><h3>Esboço e estrutura</h3><p>Primeiro o desenho se ajusta às formas do corpo. A estrutura vem antes de qualquer detalhe.</p></li>
+      <li class="passo rev"><figure><img src="assets/img/f/proc3.webp" alt="Esboço refinado em vermelho" width="540" height="1000" loading="lazy"></figure><span class="pn">03</span><h3>Refinando o esboço</h3><p>Com a estrutura definida, entram formas, proporções e detalhes. O esboço vira desenho final, com traço e sombra.</p></li>
+      <li class="passo rev"><figure><img src="assets/img/f/proc4.webp" alt="Navio tatuado no antebraço" width="540" height="1000" loading="lazy"></figure><span class="pn">04</span><h3>Na pele</h3><p>Desenho aprovado, sessão marcada. A ideia vira tatuagem e vai com você pra vida toda.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec escuro artista" id="artista">
+  <div class="wrap art-grid">
+    <figure class="art-foto rev"><img src="assets/img/f/rafael.webp" alt="Rafael Mazuchi desenhando no estúdio" width="1000" height="800" loading="lazy"></figure>
+    <div class="art-txt rev">
+      <p class="eti">O artista</p>
+      <blockquote>“Se tiver alguma ideia na cabeça, me dá um salve que <em>a gente desenrola.</em>”</blockquote>
+      <p>Rafael Mazuchi tatua o tradicional do jeito clássico e customiza cada flash para quem vai carregar. Fora da máquina, desenha, estampa, costura e pinta cerâmica. Já teve arte na coleção Classic BR da Narina Skate, marca que fez parte da adolescência dele.</p>
+      <ul class="numeros">
+        <li><b>9 mil</b><span>seguidores acompanhando o corre</span></li>
+        <li><b>+3 anos</b><span>de serigrafia feita à mão</span></li>
+        <li><b>2 flashs</b><span>o segundo sai pela metade</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec papel agendar" id="agendar">
+  <div class="wrap ag-grid">
+    <div class="ag-txt rev">
+      <p class="eti">Agendar</p>
+      <h2>Me dá <em>um salve.</em></h2>
+      <p>Preencha o básico e o pedido chega pronto no meu WhatsApp. Respondo com orçamento e datas. Agenda sempre aberta.</p>
+      <ul class="ag-lista">
+        <li>Orçamento sem compromisso</li>
+        <li>Flash ou desenho exclusivo</li>
+        <li>Colorida ou preto e cinza</li>
+      </ul>
+    </div>
+    <form class="form rev" id="form" novalidate>
+      <label class="campo"><span>Seu nome</span><input name="nome" autocomplete="name" placeholder="Como posso te chamar?" required></label>
+      <fieldset class="campo"><legend>O que você quer</legend>
+        <div class="chips" id="chTipo">
+          <label><input type="radio" name="tipo" value="Flash disponível" checked><span>Flash disponível</span></label>
+          <label><input type="radio" name="tipo" value="Desenho exclusivo"><span>Desenho exclusivo</span></label>
+          <label><input type="radio" name="tipo" value="Encomenda feita à mão"><span>Peça feita à mão</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="campo"><legend>Cor</legend>
+        <div class="chips">
+          <label><input type="radio" name="cor" value="Colorida" checked><span>Colorida</span></label>
+          <label><input type="radio" name="cor" value="Preto e cinza"><span>Preto e cinza</span></label>
+          <label><input type="radio" name="cor" value="Ainda não sei"><span>Não sei</span></label>
+        </div>
+      </fieldset>
+      <div class="duas">
+        <label class="campo"><span>Lugar do corpo</span><input name="local" placeholder="Ex.: antebraço"></label>
+        <label class="campo"><span>Tamanho</span>
+          <select name="tamanho"><option>Até 10 cm</option><option selected>10 a 15 cm</option><option>15 a 20 cm</option><option>Maior que 20 cm</option><option>Não sei</option></select>
+        </label>
+      </div>
+      <label class="campo"><span>Sua ideia</span><textarea name="ideia" rows="3" placeholder="Conta a ideia, o flash que escolheu ou manda a referência no WhatsApp"></textarea></label>
+      <label class="campo campo-quando"><span>Quando fica bom</span>
+        <select name="quando"><option>O quanto antes</option><option selected>Nas próximas semanas</option><option>Daqui a um mês ou mais</option><option>Só quero orçamento</option></select>
+      </label>
+      <p class="erro" id="erro" hidden>Coloca seu nome pra eu saber com quem estou falando.</p>
+      <button class="btn btn-tinta enviar" type="submit">Enviar pelo WhatsApp</button>
+      <p class="priv">Abre o WhatsApp com a mensagem pronta. Nada fica salvo no site.</p>
+    </form>
+  </div>
+</section>
+
+<section class="sec escuro estudio" id="estudio">
+  <div class="wrap est-grid">
+    <div class="rev">
+      <p class="eti">Estúdio</p>
+      <h2>São Caetano <em>do Sul.</em></h2>
+      <address>Av. Senador Roberto Simonsen, 560, sala 02<br>Cerâmica, São Caetano do Sul, SP<br>CEP 09530-401</address>
+      <div class="est-links">
+        <a class="btn btn-claro" href="https://wa.me/5511915911178" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-linha-c" href="https://www.instagram.com/rafaelmazuchi/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-linha-c" href="https://maps.google.com/?q=Av.+Senador+Roberto+Simonsen,+560,+São+Caetano+do+Sul" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    <div class="mapa rev">
+      <iframe title="Mapa do estúdio" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Av.%20Senador%20Roberto%20Simonsen%20560%20S%C3%A3o%20Caetano%20do%20Sul&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <span class="logo logo-p" aria-hidden="true"></span>
+  <p>© 2026 Rafael Mazuchi · Tatuagem, ilustração e serigrafia</p>
+  <p class="lrgz">Site por <a href="https://lrgz.com.br" target="_blank" rel="noopener">L R G Z</a></p>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Trabalho ampliado">
+  <button class="lb-x" id="lbX" aria-label="Fechar">✕</button>
+  <button class="lb-n lb-p" id="lbP" aria-label="Anterior">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-n lb-s" id="lbS" aria-label="Próximo">›</button>
+</div>
+
+<script src="assets/js/pecas.js?v=1"></script>
+<script src="assets/js/hero.js?v=1"></script>
+<script src="assets/js/main.js?v=1"></script>
+</body>
+</html>
